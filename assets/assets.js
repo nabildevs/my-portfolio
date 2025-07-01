@@ -1,4 +1,4 @@
-import user_image from './user-image.png';
+import user_photo from './user-photo.png';
 import code_icon from './code-icon.png';
 import edu_icon from './edu-icon.png';
 import project_icon from './project-icon.png';
@@ -23,9 +23,10 @@ import graphics_icon from './graphics-icon.png';
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
+import right_arrow_white from './right-arrow-white.png';
 
 export const assets = {
-	user_image,
+	user_photo,
 	code_icon,
 	edu_icon,
 	project_icon,
@@ -40,8 +41,6 @@ export const assets = {
 	download_icon,
 	hand_icon,
 	header_bg_color,
-	moon_icon,
-	sun_icon,
 	arrow_icon,
 	menu_black,
 	close_black,
@@ -52,6 +51,7 @@ export const assets = {
 	right_arrow,
 	send_icon,
 	right_arrow_bold,
+	right_arrow_white,
 };
 
 export const workData = [
