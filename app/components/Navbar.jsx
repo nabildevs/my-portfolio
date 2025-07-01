@@ -1,6 +1,6 @@
 import { assets } from '@/assets/assets';
 import Image from 'next/image';
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const navigation = [
 	{ name: 'Home', href: '#' },
@@ -12,6 +12,7 @@ const navigation = [
 
 const Navbar = () => {
 	const mobileMenuRef = useRef();
+	const [isScroll, setIsScroll] = useState(false);
 
 	const openMenu = () => {
 		mobileMenuRef.current.style.transform = 'translateX(-16rem)';
@@ -20,6 +21,16 @@ const Navbar = () => {
 	const closeMenu = () => {
 		mobileMenuRef.current.style.transform = 'translateX(16rem)';
 	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', () => {
+			if (scrollY > 50) {
+				setIsScroll(true);
+			} else {
+				setIsScroll(false);
+			}
+		});
+	}, []);
 
 	return (
 		<>
@@ -30,7 +41,11 @@ const Navbar = () => {
 					className="w-full"
 				/>
 			</div>
-			<nav className="font-ovo w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+			<nav
+				className={`font-ovo w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${
+					isScroll ? 'bg-white/50 backdrop-blur-lg shadow-sm' : ''
+				}`}
+			>
 				<a href="#top">
 					<Image
 						src={assets.logo}
@@ -41,21 +56,8 @@ const Navbar = () => {
 
 				<ul className="hidden md:flex items-center gap-5 lg:gap-8">
 					{navigation.map((item) => (
-						<li>
-							<a
-								key={item.name}
-								href={item.href}
-								// className={({ isActive }) => {
-								// 	return (
-								// 		'rounded-md px-3 py-2 text-sm font-medium ' +
-								// 		(isActive
-								// 			? 'bg-violet-800 text-white'
-								// 			: 'text-slate-900 hover:bg-violet-800 hover:text-white')
-								// 	);
-								// }}
-							>
-								{item.name}
-							</a>
+						<li key={item.name} className="hover:text-amber-700">
+							<a href={item.href}>{item.name}</a>
 						</li>
 					))}
 				</ul>
@@ -82,20 +84,8 @@ const Navbar = () => {
 					</div>
 
 					{navigation.map((item) => (
-						<li>
-							<a
-								onClick={closeMenu}
-								key={item.name}
-								href={item.href}
-								// className={({ isActive }) => {
-								// 	return (
-								// 		'rounded-md px-3 py-2 text-sm font-medium ' +
-								// 		(isActive
-								// 			? 'bg-violet-800 text-white'
-								// 			: 'text-slate-900 hover:bg-violet-800 hover:text-white')
-								// 	);
-								// }}
-							>
+						<li key={item.name} className="active:text-amber-700">
+							<a onClick={closeMenu} href={item.href}>
 								{item.name}
 							</a>
 						</li>
