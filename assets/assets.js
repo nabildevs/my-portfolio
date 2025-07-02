@@ -1,7 +1,7 @@
-import user_photo from './user-photo.png';
+import user_photo from './user-photo.jpg';
 import code_icon from './code-icon.png';
 import edu_icon from './edu-icon.png';
-import project_icon from './project-icon.png';
+import project_icon from './project-icon.svg';
 import vscode from './vscode.png';
 import firebase from './firebase.png';
 import figma from './figma.png';
@@ -24,6 +24,7 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_white from './right-arrow-white.png';
+import experience_icon from './experience-icon.svg';
 
 export const assets = {
 	user_photo,
@@ -52,6 +53,7 @@ export const assets = {
 	send_icon,
 	right_arrow_bold,
 	right_arrow_white,
+	experience_icon,
 };
 
 export const workData = [
@@ -110,19 +112,19 @@ export const serviceData = [
 
 export const infoList = [
 	{
-		icon: assets.code_icon,
-		title: 'Languages',
-		description: 'HTML, CSS, JavaScript React Js, Next Js',
+		icon: assets.experience_icon,
+		title: 'Experience',
+		description: '2 Years',
 	},
 	{
 		icon: assets.edu_icon,
 		title: 'Education',
-		description: 'B.Tech in Computer Science',
+		description: 'Bachelor of CS',
 	},
 	{
 		icon: assets.project_icon,
 		title: 'Projects',
-		description: 'Built more than 5 projects',
+		description: '5+ Completed',
 	},
 ];
 
