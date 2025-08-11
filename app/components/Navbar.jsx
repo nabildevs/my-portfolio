@@ -1,4 +1,5 @@
 import { assets } from '@/assets/assets';
+import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import React, { useEffect, useRef, useState } from 'react';
 
@@ -6,7 +7,7 @@ const navigation = [
 	{ name: 'Home', href: '#' },
 	{ name: 'About', href: '#about' },
 	{ name: 'Services', href: '#services' },
-	{ name: 'Projects', href: '#projects' },
+	{ name: 'Portfolio', href: '#portfolio' },
 	{ name: 'Contact', href: '#contact' },
 ];
 
@@ -49,18 +50,17 @@ const Navbar = () => {
 
 				<ul className="hidden md:flex items-center gap-5 lg:gap-8">
 					{navigation.map((item) => (
-						<li key={item.name} className="hover:text-amber-700">
+						<li key={item.name} className="hover:text-amber-600">
 							<a href={item.href}>{item.name}</a>
 						</li>
 					))}
 				</ul>
 
-				<button onClick={openMenu} className="block md:hidden">
-					<Image
-						src={assets.menu_black}
-						alt="Menu Icon"
-						className="w-6"
-					/>
+				<button
+					onClick={openMenu}
+					className="block md:hidden cursor-pointer"
+				>
+					<Menu alt="Menu Icon" className="w-7 h-7" />
 				</button>
 
 				{/* Mobile Menu */}
@@ -69,15 +69,14 @@ const Navbar = () => {
 					className="flex items-end md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-50 z-50 h-screen bg-gray-50 transition duration-500"
 				>
 					<div onClick={closeMenu} className="absolute right-6 top-6">
-						<Image
-							src={assets.close_black}
+						<X
 							alt="Close Button"
-							className="w-5 cursor-pointer"
+							className="w-7 h-7 cursor-pointer"
 						/>
 					</div>
 
 					{navigation.map((item) => (
-						<li key={item.name} className="active:text-amber-700">
+						<li key={item.name} className="active:text-amber-600">
 							<a onClick={closeMenu} href={item.href}>
 								{item.name}
 							</a>

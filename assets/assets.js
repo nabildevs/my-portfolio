@@ -1,27 +1,5 @@
 import user_photo from './user-photo.jpg';
-import code_icon from './code-icon.png';
-import edu_icon from './edu-icon.png';
-import project_icon from './project-icon.svg';
-import vscode from './vscode.png';
-import firebase from './firebase.png';
-import figma from './figma.png';
-import git from './git.png';
-import mongodb from './mongodb.png';
 import logo from './logo.png';
-import mail_icon from './mail_icon.png';
-import profile_img from './profile-img.png';
-import download_icon from './download-icon.png';
-import hand_icon from './hand-icon.png';
-import arrow_icon from './arrow-icon.png';
-import menu_black from './menu-black.png';
-import close_black from './close-black.png';
-import web_icon from './web-icon.png';
-import mobile_icon from './mobile-icon.png';
-import ui_icon from './ui-icon.png';
-import graphics_icon from './graphics-icon.png';
-import right_arrow from './right-arrow.png';
-import send_icon from './send-icon.png';
-import experience_icon from './experience-icon.svg';
 import {
 	BriefcaseBusiness,
 	Cloud,
@@ -33,29 +11,7 @@ import {
 
 export const assets = {
 	user_photo,
-	code_icon,
-	edu_icon,
-	project_icon,
-	vscode,
-	firebase,
-	figma,
-	git,
-	mongodb,
 	logo,
-	mail_icon,
-	profile_img,
-	download_icon,
-	hand_icon,
-	arrow_icon,
-	menu_black,
-	close_black,
-	web_icon,
-	mobile_icon,
-	ui_icon,
-	graphics_icon,
-	right_arrow,
-	send_icon,
-	experience_icon,
 };
 
 export const servicesData = [
@@ -127,5 +83,146 @@ export const skillsData = [
 		name: 'PostgreSQL',
 		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
 		category: 'Database',
+	},
+];
+
+export const projectsData = [
+	{
+		id: 2,
+		title: 'AKK (Aplikasi Keringanan Kredit)',
+		category: 'Mobile Application',
+		technologies: ['Laravel', 'Tailwind CSS', 'PHP', 'JavaScript', 'MySQL'],
+		startDate: 'Dec 2024',
+		endDate: 'Jan 2025',
+		description:
+			'A mobile application for credit relief management, providing authentication, credit balance calculation, and overdue payment rescheduling.',
+		keypoints: [
+			'Developed REST APIs using Laravel 11 with JWT authentication',
+			'Implemented SPA front-end using Laravel Blade and JavaScript',
+			'Integrated API calls for seamless data interaction',
+			'Converted Laravel Blade front-end into mobile app using Android Studio WebView',
+			'Implemented multi-level user system for frontliner and debtor',
+		],
+	},
+	{
+		id: 3,
+		title: 'SIMRS Promedik',
+		category: 'Web Application',
+		technologies: ['Laravel', 'Bootstrap', 'PHP', 'MySQL'],
+		startDate: 'Sep 2024',
+		endDate: 'Nov 2024',
+		description:
+			'A hospital management system that digitizes patient treatment flow from registration to transaction completion.',
+		keypoints: [
+			'Developed authentication and role permission system using Laravel Spatie',
+			'Implemented CRUD for patient and medical personnel master data',
+			'Built outpatient registration and transaction system',
+			'Created database migrations, factories, and seeders with proper relationships',
+		],
+	},
+	{
+		id: 4,
+		title: 'SIMPAN UMKM',
+		category: 'Web Application',
+		technologies: ['Laravel', 'Bootstrap', 'PHP', 'MySQL'],
+		startDate: 'Jun 2024',
+		endDate: 'Aug 2024',
+		description:
+			'A platform for micro, small, and medium enterprises in Sukabumi to register their business to DISKUMINDAG.',
+		keypoints: [
+			'Implemented authentication and multi-level user management using Laravel Spatie',
+			'Built Content Management System (CMS) and approval system',
+			'Enabled export to .xlsx using PhpSpreadsheet',
+			'Created business registration form with image upload',
+		],
+	},
+	{
+		id: 5,
+		title: 'Ceritacerdas.id',
+		category: 'Web Application (Blog)',
+		technologies: ['CodeIgniter', 'Bootstrap', 'PHP', 'MySQL'],
+		startDate: 'Mar 2024',
+		endDate: 'Apr 2024',
+		description:
+			'A blog platform featuring dynamic content management, article search, and multi-level user authentication.',
+		keypoints: [
+			'Developed custom blog pages and admin dashboard',
+			'Implemented full CRUD functionality for articles',
+			'Built dashboard with article search and statistics',
+			'Collaborated with team to meet client requirements',
+		],
+	},
+	{
+		id: 6,
+		title: 'POS Emerald Tree Resto & Coffee Bar',
+		category: 'Web Application (POS)',
+		technologies: [
+			'CodeIgniter',
+			'Bootstrap',
+			'PHP',
+			'JavaScript',
+			'MySQL',
+		],
+		startDate: 'Nov 2023',
+		endDate: 'Feb 2024',
+		description:
+			'A POS application for restaurant operations from table selection to order completion.',
+		keypoints: [
+			'Implemented table selection, ordering, and receipt printing',
+			'Developed raw material management system',
+			'Integrated JavaScript modules for enhanced functionality',
+			'Collaborated via GitHub for version control',
+		],
+	},
+	{
+		id: 7,
+		title: 'VisCOK',
+		category: 'Web Application',
+		technologies: ['CodeIgniter', 'Bootstrap', 'PHP', 'MySQL'],
+		startDate: 'Oct 2023',
+		endDate: 'Dec 2023',
+		description:
+			'A financial management application for recording and managing monthly government expenditures.',
+		keypoints: [
+			'Implemented multi-level user authentication and admin dashboard',
+			'Developed bank account and expenditure master data management',
+			'Built expense submission and receipt printing feature',
+			'Ensured robust backend performance with MySQL',
+		],
+	},
+];
+
+export const experienceData = [
+	{
+		id: 1,
+		role: 'Full Stack Developer',
+		company: 'Entercode Technology',
+		location: 'Gorontalo, ID (Remote)',
+		startDate: 'Apr 2025',
+		endDate: 'May 2025',
+		description:
+			'Contributed to full-stack development of a web application for an Internet Service Provider (ISP) using Laravel and MySQL.',
+		achievements: [
+			'Implemented Repository Pattern in Laravel for maintainable code',
+			'Integrated AJAX for dynamic front-end interactions',
+			'Added WhatsApp notification integration using Twilio API',
+			'Implemented payment gateway integration with Duitku',
+		],
+	},
+	{
+		id: 2,
+		role: 'Full Stack Developer',
+		company: 'PT. Labcom Indonesia',
+		location: 'Sukabumi, ID',
+		startDate: 'Oct 2023',
+		endDate: '2024',
+		description:
+			'Developed and maintained web applications covering both front-end and back-end, including Point of Sales (POS) and blog CMS projects.',
+		achievements: [
+			'Built and enhanced POS application for restaurant operations',
+			'Developed CMS-powered blog website with custom features',
+			'Used PHP and JavaScript with CodeIgniter framework',
+			'Collaborated with developers via GitHub for version control',
+		],
 	},
 ];

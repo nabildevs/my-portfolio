@@ -32,7 +32,7 @@ const About = () => {
 							({ icon: Icon, title, description }, index) => (
 								<li
 									key={index}
-									className="flex flex-col justify-center items-center text-center p-5 border border-gray-200 rounded-xl cursor-pointer hover:border-amber-700 hover:shadow-lg transition-all duration-500"
+									className="flex flex-col justify-center items-center text-center p-5 border border-gray-200 rounded-xl cursor-pointer hover:border-amber-600 hover:shadow-lg transition-all duration-500"
 								>
 									<Icon className="w-7 h-7 mt-3 text-gray-700" />
 									<h3 className="font-sc_pro mt-2 font-semibold text-gray-700">
