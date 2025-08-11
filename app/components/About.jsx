@@ -4,8 +4,10 @@ import React from 'react';
 
 const About = () => {
 	return (
-		<div id="about" className="w-full px-[12%] py-10 scroll-mt-20">
-			<h4 className="text-center mb-2 text-lg">Introduction</h4>
+		<div id="about" className="w-full px-[12%] py-16 scroll-mt-16">
+			<h4 className="text-center text-gray=500 mb-1 text-lg">
+				Introduction
+			</h4>
 			<h2 className="text-center text-5xl">About Me</h2>
 			<div className="flex flex-col w-full lg:flex-row items-center gap-20 my-20">
 				<div className="w-64 sm:w-80 max-w-none">
@@ -30,7 +32,7 @@ const About = () => {
 							({ icon: Icon, title, description }, index) => (
 								<li
 									key={index}
-									className="flex flex-col justify-center items-center text-center p-5 border border-gray-200 rounded-xl cursor-pointer hover:border-amber-700 duration-500"
+									className="flex flex-col justify-center items-center text-center p-5 border border-gray-200 rounded-xl cursor-pointer hover:border-amber-700 hover:shadow-lg transition-all duration-500"
 								>
 									<Icon className="w-7 h-7 mt-3 text-gray-700" />
 									<h3 className="font-sc_pro mt-2 font-semibold text-gray-700">

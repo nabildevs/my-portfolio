@@ -22,7 +22,14 @@ import graphics_icon from './graphics-icon.png';
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import experience_icon from './experience-icon.svg';
-import { BriefcaseBusiness, FolderGit2, GraduationCap } from 'lucide-react';
+import {
+	BriefcaseBusiness,
+	Cloud,
+	FolderGit2,
+	Globe,
+	GraduationCap,
+	Laptop,
+} from 'lucide-react';
 
 export const assets = {
 	user_photo,
@@ -51,57 +58,24 @@ export const assets = {
 	experience_icon,
 };
 
-export const workData = [
+export const servicesData = [
 	{
-		title: 'Frontend project',
-		description: 'Web Design',
-		bgImage: '/work-1.png',
-	},
-	{
-		title: 'Geo based app',
-		description: 'Mobile App',
-		bgImage: '/work-2.png',
-	},
-	{
-		title: 'Photography site',
-		description: 'Web Design',
-		bgImage: '/work-3.png',
-	},
-	{
-		title: 'UI/UX designing',
-		description: 'UI/UX Design',
-		bgImage: '/work-4.png',
-	},
-];
-
-export const serviceData = [
-	{
-		icon: assets.web_icon,
-		title: 'Web design',
+		icon: Globe,
+		title: 'Static Website',
 		description:
-			'Web development is the process of building, programming...',
-		link: '',
+			'Fast, secure, and SEO-optimized static websites perfect for landing pages, portfolios, and business presentations.',
 	},
 	{
-		icon: assets.mobile_icon,
-		title: 'Mobile app',
+		icon: Laptop,
+		title: 'Web Application',
 		description:
-			'Mobile app development involves creating software for mobile devices...',
-		link: '',
+			'Dynamic and interactive web applications built with modern frameworks to meet your business requirements.',
 	},
 	{
-		icon: assets.ui_icon,
-		title: 'UI/UX design',
+		icon: Cloud,
+		title: 'SaaS Development',
 		description:
-			'UI/UX design focuses on creating a seamless user experience...',
-		link: '',
-	},
-	{
-		icon: assets.graphics_icon,
-		title: 'Graphics design',
-		description:
-			'Creative design solutions to enhance visual communication...',
-		link: '',
+			'Scalable Software-as-a-Service solutions featuring user management, subscriptions, and a secure, high-performance architecture designed for growth.',
 	},
 ];
 
@@ -123,10 +97,35 @@ export const infoList = [
 	},
 ];
 
-export const toolsData = [
-	assets.vscode,
-	assets.firebase,
-	assets.mongodb,
-	assets.figma,
-	assets.git,
+export const skillsData = [
+	{
+		name: 'React',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+		category: 'Frontend',
+	},
+	{
+		name: 'Next.js',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+		category: 'Frontend',
+	},
+	{
+		name: 'Laravel',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg',
+		category: 'Backend',
+	},
+	{
+		name: 'CodeIgniter',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg',
+		category: 'Backend',
+	},
+	{
+		name: 'MySQL',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+		category: 'Database',
+	},
+	{
+		name: 'PostgreSQL',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+		category: 'Database',
+	},
 ];

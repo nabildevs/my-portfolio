@@ -27,3 +27,16 @@
 		border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
 	}
 }
+
+@keyframes slide-right {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc(-100% / 3));
+	}
+}
+.animate-slide-right {
+	animation: slide-right 25s linear infinite;
+	width: max-content;
+}
