@@ -12,7 +12,6 @@ import mail_icon from './mail_icon.png';
 import profile_img from './profile-img.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
-import header_bg_color from './header-bg-color.png';
 import arrow_icon from './arrow-icon.png';
 import menu_black from './menu-black.png';
 import close_black from './close-black.png';
@@ -22,9 +21,8 @@ import ui_icon from './ui-icon.png';
 import graphics_icon from './graphics-icon.png';
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
-import right_arrow_bold from './right-arrow-bold.png';
-import right_arrow_white from './right-arrow-white.png';
 import experience_icon from './experience-icon.svg';
+import { BriefcaseBusiness, FolderGit2, GraduationCap } from 'lucide-react';
 
 export const assets = {
 	user_photo,
@@ -41,7 +39,6 @@ export const assets = {
 	profile_img,
 	download_icon,
 	hand_icon,
-	header_bg_color,
 	arrow_icon,
 	menu_black,
 	close_black,
@@ -51,8 +48,6 @@ export const assets = {
 	graphics_icon,
 	right_arrow,
 	send_icon,
-	right_arrow_bold,
-	right_arrow_white,
 	experience_icon,
 };
 
@@ -112,17 +107,17 @@ export const serviceData = [
 
 export const infoList = [
 	{
-		icon: assets.experience_icon,
+		icon: BriefcaseBusiness,
 		title: 'Experience',
 		description: '2 Years',
 	},
 	{
-		icon: assets.edu_icon,
+		icon: GraduationCap,
 		title: 'Education',
 		description: 'Bachelor of CS',
 	},
 	{
-		icon: assets.project_icon,
+		icon: FolderGit2,
 		title: 'Projects',
 		description: '5+ Completed',
 	},
