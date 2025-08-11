@@ -99,7 +99,7 @@ const Portfolio = () => {
 										onClick={() =>
 											openProjectModal(project)
 										}
-										className="text-gray-500 hover:text-amber-600 transition-colors duration-300 flex items-center gap-2 cursor-pointer"
+										className="text-gray-500 hover:text-amber-700 transition-colors duration-300 flex items-center gap-2 cursor-pointer"
 									>
 										<Eye className="w-4 h-4" />
 										View Details

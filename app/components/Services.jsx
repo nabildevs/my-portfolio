@@ -14,10 +14,10 @@ const Services = () => {
 					({ icon: Icon, title, description }, index) => (
 						<div
 							key={index}
-							className="group p-8 border border-gray-200 rounded-xl hover:border-amber-600 hover:shadow-lg transition-all duration-500 cursor-pointer"
+							className="group p-8 border border-gray-200 rounded-xl hover:border-amber-700 hover:shadow-lg transition-all duration-500 cursor-pointer"
 						>
 							<div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber-100 transition-colors duration-300">
-								<Icon className="w-8 h-8 text-amber-600" />
+								<Icon className="w-8 h-8 text-amber-700" />
 							</div>
 							<h3 className="text-xl font-sc_pro font-semibold mb-3 text-gray-800">
 								{title}
@@ -31,7 +31,7 @@ const Services = () => {
 			</div>
 
 			<div className="text-center mt-16">
-				<div className="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-full hover:border-amber-600 transition-colors duration-300">
+				<div className="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-full hover:border-amber-700 transition-colors duration-300">
 					<MessageCircle className="w-5 h-5 text-gray-600" />
 					<span className="text-gray-700">
 						Need other services? Let's discuss your project.
