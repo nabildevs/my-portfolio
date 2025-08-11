@@ -130,7 +130,7 @@ const Portfolio = () => {
 									<h3 className="text-xl font-semibold text-gray-900 mb-2">
 										{exp.role}
 									</h3>
-									<div className="flex flex-col sm:gap-y-1 lg:flex-row lg:items-center gap-x-5 mb-5">
+									<div className="flex flex-col gap-y-2 lg:flex-row lg:items-center gap-x-5 mb-5">
 										<div className="flex items-center gap-2 text-sm">
 											<Building2 className="w-4 h-4" />
 											<span>{exp.company}</span>
@@ -187,9 +187,9 @@ const Portfolio = () => {
 							</h3>
 							<button
 								onClick={closeModal}
-								className="p-2 hover:bg-gray-50 rounded-xl transition-all duration-200 hover:scale-105"
+								className="p-2 hover:bg-gray-50 cursor-pointer rounded-xl transition-all duration-200 hover:scale-105"
 							>
-								<X className="w-6 h-6 text-gray-400 hover:text-gray-600" />
+								<X className="w-6 h-6 text-gray-400 hover:text-red-600" />
 							</button>
 						</div>
 
