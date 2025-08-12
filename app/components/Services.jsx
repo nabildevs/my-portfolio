@@ -3,7 +3,7 @@ import { MessageCircle } from 'lucide-react';
 
 const Services = () => {
 	return (
-		<div id="services" className="w-full px-[12%] py-16 scroll-mt-16">
+		<div id="services" className="w-full px-[12%] py-20 scroll-mt-20">
 			<h4 className="text-center text-gray-500 mb-1 text-lg">
 				What I Offer
 			</h4>
@@ -50,18 +50,33 @@ const Services = () => {
 							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg',
 							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
 							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+							'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',
+							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+							//
 							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
 							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
 							'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg',
 							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg',
 							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
 							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
-							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
-							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
-							'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg',
-							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg',
-							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
-							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+							'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',
+							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+							'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
 						].map((logo, index) => (
 							<div key={index} className="flex-shrink-0">
 								<img

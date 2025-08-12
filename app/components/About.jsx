@@ -4,7 +4,7 @@ import React from 'react';
 
 const About = () => {
 	return (
-		<div id="about" className="w-full px-[12%] py-16 scroll-mt-16">
+		<div id="about" className="w-full px-[12%] py-20 scroll-mt-20">
 			<h4 className="text-center text-gray=500 mb-1 text-lg">
 				Introduction
 			</h4>
