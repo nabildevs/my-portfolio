@@ -16,7 +16,7 @@ const Services = () => {
 							key={index}
 							className="group p-8 border border-gray-200 rounded-xl hover:border-amber-700 hover:shadow-lg transition-all duration-500 cursor-pointer"
 						>
-							<div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber-100 transition-colors duration-300">
+							<div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-amber-100 transition-colors duration-300">
 								<Icon className="w-8 h-8 text-amber-700" />
 							</div>
 							<h3 className="text-xl font-sc_pro font-semibold mb-3 text-gray-800">

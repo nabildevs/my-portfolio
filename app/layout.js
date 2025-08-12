@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className="scroll-smooth scrollbar-hide">
 			<body
-				className={`${sc_pro.className} ${lora.className} antialiased leading-6 overflow-x-hidden`}
+				className={`${sc_pro.className} ${lora.className} antialiased leading-relaxed overflow-x-hidden`}
 			>
 				{children}
 			</body>

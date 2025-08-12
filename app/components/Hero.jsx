@@ -12,15 +12,15 @@ const Hero = () => {
 			</h1>
 			<p className="max-w-2xl mx-auto">
 				Enjoys building clean, functional, and thoughtful web apps. With
-				2 years of experience, I turn ideas into reality—one line of
-				code at a time.
+				over 2 years of experience, I turn ideas into reality, one line
+				of code at a time.
 			</p>
 			<div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4">
 				<a
-					href="#contact"
+					href="#about"
 					className="px-10 py-3 border border-white rounded-full bg-gray-950 text-white flex items-center gap-2"
 				>
-					Get In Touch <ArrowRight className="w-4 h-4" />
+					Discover Me <ArrowRight className="w-5 h-5" />
 				</a>
 				<a
 					href="/cv-hasbi-nabil.pdf"

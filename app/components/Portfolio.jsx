@@ -235,7 +235,7 @@ const Portfolio = () => {
 												(tech, index) => (
 													<span
 														key={index}
-														className="font-sc_pro px-2 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-lg"
+														className="font-sc_pro px-2 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-xl"
 													>
 														{tech}
 													</span>
