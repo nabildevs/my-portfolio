@@ -4,9 +4,13 @@ import {
 	BriefcaseBusiness,
 	Cloud,
 	FolderGit2,
+	Github,
 	Globe,
 	GraduationCap,
 	Laptop,
+	Linkedin,
+	Mail,
+	Smartphone,
 } from 'lucide-react';
 
 export const assets = {
@@ -224,5 +228,32 @@ export const experienceData = [
 			'Used PHP and JavaScript with CodeIgniter framework',
 			'Collaborated with developers via GitHub for version control',
 		],
+	},
+];
+
+export const socialLinks = [
+	{
+		name: 'GitHub',
+		icon: Github,
+		url: 'https://github.com/nabildevs',
+		color: 'hover:text-gray-900 hover:bg-gray-100',
+	},
+	{
+		name: 'LinkedIn',
+		icon: Linkedin,
+		url: 'https://linkedin.com/in/hasbi-nabil',
+		color: 'hover:text-blue-700 hover:bg-blue-50',
+	},
+	{
+		name: 'WhatsApp',
+		icon: Smartphone,
+		url: 'https://wa.me/62895403324676',
+		color: 'hover:text-green-700 hover:bg-green-50',
+	},
+	{
+		name: 'Email',
+		icon: Mail,
+		url: 'mailto:hasbinabil.work@gmail.com',
+		color: 'hover:text-red-700 hover:bg-red-50',
 	},
 ];
