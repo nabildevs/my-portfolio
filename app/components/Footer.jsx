@@ -9,7 +9,8 @@ const Footer = () => {
 		<motion.footer
 			initial={{ y: 30, opacity: 0 }}
 			whileInView={{ y: 0, opacity: 1 }}
-			transition={{ duration: 0.6, delay: 0.5 }}
+			viewport={{ amount: 0.2 }}
+			transition={{ duration: 0.6 }}
 			className="w-full bg-gray-50 border-t border-gray-200"
 		>
 			<div className="px-[12%] py-8">

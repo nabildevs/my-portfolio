@@ -32,7 +32,8 @@ const Portfolio = () => {
 		<motion.div
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
-			transition={{ duration: 1, delay: 0.5 }}
+			viewport={{ amount: 0.2 }}
+			transition={{ duration: 0.6, delay: 0.3 }}
 			id="portfolio"
 			className="w-full px-[12%] py-20 scroll-mt-20"
 		>
@@ -69,7 +70,7 @@ const Portfolio = () => {
 				<motion.div
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}
-					transition={{ duration: 0.8 }}
+					transition={{ duration: 0.6 }}
 					className="max-w-4xl mx-auto space-y-6"
 				>
 					{projectsData.map((project) => (
@@ -124,7 +125,7 @@ const Portfolio = () => {
 				<motion.div
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}
-					transition={{ duration: 0.8 }}
+					transition={{ duration: 0.6 }}
 					className="max-w-3xl mx-auto"
 				>
 					<div className="relative">

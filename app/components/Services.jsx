@@ -7,7 +7,8 @@ const Services = () => {
 		<motion.div
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
-			transition={{ duration: 1, delay: 0.5 }}
+			viewport={{ amount: 0.2 }}
+			transition={{ duration: 0.6, delay: 0.3 }}
 			id="services"
 			className="w-full px-[12%] py-20 scroll-mt-20"
 		>

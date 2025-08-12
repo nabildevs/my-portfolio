@@ -7,7 +7,9 @@ const Hero = () => {
 		<motion.div
 			initial={{ y: -30, opacity: 0 }}
 			whileInView={{ y: 0, opacity: 1 }}
-			transition={{ duration: 0.6, delay: 0.5 }}
+			viewport={{ amount: 0.2 }}
+			transition={{ duration: 0.6 }}
+			id="home"
 			className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4"
 		>
 			<h3 className="text-xl md:text-2xl mb-3">
