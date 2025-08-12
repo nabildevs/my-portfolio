@@ -1,9 +1,15 @@
 import { ArrowDownToLine, ArrowRight } from 'lucide-react';
 import React from 'react';
+import { motion } from 'motion/react';
 
 const Hero = () => {
 	return (
-		<div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+		<motion.div
+			initial={{ y: -30, opacity: 0 }}
+			whileInView={{ y: 0, opacity: 1 }}
+			transition={{ duration: 0.6, delay: 0.5 }}
+			className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4"
+		>
 			<h3 className="text-xl md:text-2xl mb-3">
 				Greetings! I'm Hasbi Nabil👋
 			</h3>
@@ -30,7 +36,7 @@ const Hero = () => {
 					My CV <ArrowDownToLine className="w-5 h-5" />
 				</a>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

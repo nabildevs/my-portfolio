@@ -1,9 +1,16 @@
 import { servicesData } from '@/assets/assets';
 import { MessageCircle } from 'lucide-react';
+import { motion } from 'motion/react';
 
 const Services = () => {
 	return (
-		<div id="services" className="w-full px-[12%] py-20 scroll-mt-20">
+		<motion.div
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			transition={{ duration: 1, delay: 0.5 }}
+			id="services"
+			className="w-full px-[12%] py-20 scroll-mt-20"
+		>
 			<h4 className="text-center text-gray-500 mb-1 text-lg">
 				What I Offer
 			</h4>
@@ -90,7 +97,7 @@ const Services = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

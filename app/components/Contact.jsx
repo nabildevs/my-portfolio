@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { socialLinks } from '@/assets/assets';
+import { motion } from 'motion/react';
 import emailjs from '@emailjs/browser';
 import {
 	AlertCircle,
@@ -72,7 +73,13 @@ const Contact = () => {
 	};
 
 	return (
-		<div id="contact" className="w-full px-[12%] py-20 scroll-mt-20">
+		<motion.div
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			transition={{ duration: 1, delay: 0.5 }}
+			id="contact"
+			className="w-full px-[12%] py-20 scroll-mt-20"
+		>
 			<h4 className="text-center text-gray=500 mb-1 text-lg">
 				Get In Touch
 			</h4>
@@ -270,7 +277,7 @@ const Contact = () => {
 					</form>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

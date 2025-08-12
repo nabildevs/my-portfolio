@@ -1,17 +1,14 @@
 import { useState } from 'react';
 import { projectsData, experienceData } from '@/assets/assets';
+import { motion } from 'motion/react';
 import {
 	Building2,
 	Calendar,
-	CheckCircle,
-	CheckCircle2,
-	CircleSmall,
 	Code,
 	Eye,
 	FileText,
 	Folder,
 	MapPin,
-	Settings,
 	Star,
 	X,
 } from 'lucide-react';
@@ -32,7 +29,13 @@ const Portfolio = () => {
 	};
 
 	return (
-		<div id="portfolio" className="w-full px-[12%] py-20 scroll-mt-20">
+		<motion.div
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			transition={{ duration: 1, delay: 0.5 }}
+			id="portfolio"
+			className="w-full px-[12%] py-20 scroll-mt-20"
+		>
 			<h4 className="text-center text-gray=500 mb-1 text-lg">My Work</h4>
 			<h2 className="text-center text-5xl mb-16">Portfolio</h2>
 
@@ -63,7 +66,12 @@ const Portfolio = () => {
 
 			{/* Projects Tab */}
 			{activeTab === 'projects' && (
-				<div className="max-w-4xl mx-auto space-y-6">
+				<motion.div
+					initial={{ opacity: 0 }}
+					whileInView={{ opacity: 1 }}
+					transition={{ duration: 0.8 }}
+					className="max-w-4xl mx-auto space-y-6"
+				>
 					{projectsData.map((project) => (
 						<div
 							key={project.id}
@@ -108,12 +116,17 @@ const Portfolio = () => {
 							</div>
 						</div>
 					))}
-				</div>
+				</motion.div>
 			)}
 
 			{/* Experience Tab */}
 			{activeTab === 'experience' && (
-				<div className="max-w-3xl mx-auto">
+				<motion.div
+					initial={{ opacity: 0 }}
+					whileInView={{ opacity: 1 }}
+					transition={{ duration: 0.8 }}
+					className="max-w-3xl mx-auto"
+				>
 					<div className="relative">
 						{/* Timeline Line */}
 						<div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gray-200"></div>
@@ -173,12 +186,17 @@ const Portfolio = () => {
 							</div>
 						))}
 					</div>
-				</div>
+				</motion.div>
 			)}
 
 			{/* Project Detail Modal */}
 			{isModalOpen && selectedProject && (
-				<div className="fixed inset-0 bg-gray-900/50 z-50 flex items-center justify-center p-4">
+				<motion.div
+					initial={{ opacity: 0 }}
+					whileInView={{ opacity: 1 }}
+					transition={{ duration: 0.3 }}
+					className="fixed inset-0 bg-gray-900/50 z-50 flex items-center justify-center p-4"
+				>
 					<div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-hidden shadow-2xl">
 						{/* Header */}
 						<div className="sticky top-0 bg-white border-b border-gray-100 px-6 py-5 flex items-center justify-between">
@@ -285,9 +303,9 @@ const Portfolio = () => {
 							</div>
 						</div>
 					</div>
-				</div>
+				</motion.div>
 			)}
-		</div>
+		</motion.div>
 	);
 };
 

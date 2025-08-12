@@ -1,11 +1,17 @@
 import Image from 'next/image';
 import { assets } from '@/assets/assets';
+import { motion } from 'motion/react';
 
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
 
 	return (
-		<footer className="w-full bg-gray-50 border-t border-gray-200">
+		<motion.footer
+			initial={{ y: 30, opacity: 0 }}
+			whileInView={{ y: 0, opacity: 1 }}
+			transition={{ duration: 0.6, delay: 0.5 }}
+			className="w-full bg-gray-50 border-t border-gray-200"
+		>
 			<div className="px-[12%] py-8">
 				<div className="max-w-6xl mx-auto">
 					<div className="flex flex-col items-center text-center space-y-5">
@@ -47,7 +53,7 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-		</footer>
+		</motion.footer>
 	);
 };
 
