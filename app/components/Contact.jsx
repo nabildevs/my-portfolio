@@ -219,7 +219,7 @@ const Contact = () => {
 								htmlFor="title"
 								className="block text-sm font-medium text-gray-700 mb-2"
 							>
-								title
+								Title
 							</label>
 							<input
 								type="text"
