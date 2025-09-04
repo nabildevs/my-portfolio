@@ -108,7 +108,7 @@ const Portfolio = () => {
 										onClick={() =>
 											openProjectModal(project)
 										}
-										className="text-gray-500 hover:text-amber-700 transition-colors duration-300 flex items-center gap-2 cursor-pointer"
+										className="text-gray-500 hover:text-cyan-600 transition-colors duration-300 flex items-center gap-2 cursor-pointer"
 									>
 										<Eye className="w-4 h-4" />
 										View Details
@@ -138,7 +138,7 @@ const Portfolio = () => {
 								className="relative pl-12 pb-12 last:pb-0"
 							>
 								{/* Timeline Dot */}
-								<div className="absolute left-2.5 w-3 h-3 bg-amber-700 rounded-full border-2 border-white shadow"></div>
+								<div className="absolute left-2.5 w-3 h-3 bg-cyan-600 rounded-full border-2 border-white shadow"></div>
 
 								<div className="bg-white border border-gray-200 rounded-xl p-6 hover:border-gray-800 hover:shadow-lg transition-shadow duration-300">
 									<h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -176,7 +176,7 @@ const Portfolio = () => {
 														key={achIndex}
 														className="text-gray-600 text-sm flex items-start gap-2"
 													>
-														<span className="w-1.5 h-1.5 bg-amber-700 rounded-full mt-2 flex-shrink-0"></span>
+														<span className="w-1.5 h-1.5 bg-cyan-600 rounded-full mt-2 flex-shrink-0"></span>
 														{achievement}
 													</li>
 												)
@@ -254,7 +254,7 @@ const Portfolio = () => {
 												(tech, index) => (
 													<span
 														key={index}
-														className="font-sc_pro px-2 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-xl"
+														className="font-sc_pro px-2 py-1 bg-cyan-100 text-cyan-600 text-xs font-medium rounded-xl"
 													>
 														{tech}
 													</span>
@@ -294,7 +294,7 @@ const Portfolio = () => {
 													key={index}
 													className="flex items-center gap-3 p-3 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-200"
 												>
-													<span className="w-1.5 h-1.5 bg-amber-700 rounded-full flex-shrink-0"></span>
+													<span className="w-1.5 h-1.5 bg-cyan-600 rounded-full flex-shrink-0"></span>
 													{point}
 												</li>
 											)

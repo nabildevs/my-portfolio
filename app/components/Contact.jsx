@@ -189,7 +189,7 @@ const Contact = () => {
 									value={formData.name}
 									onChange={handleInputChange}
 									required
-									className="w-full bg-gray-50 px-4 py-3 border border-gray-200 rounded-xl focus:bg-white focus:outline-none focus:border-amber-700 focus:border-2 transition-colors duration-200"
+									className="w-full bg-gray-50 px-4 py-3 border border-gray-200 rounded-xl focus:bg-white focus:outline-none focus:border-cyan-600 focus:border-2 transition-colors duration-200"
 									placeholder="John Doe"
 								/>
 							</div>
@@ -207,7 +207,7 @@ const Contact = () => {
 									value={formData.email}
 									onChange={handleInputChange}
 									required
-									className="w-full bg-gray-50 px-4 py-3 border border-gray-200 rounded-xl focus:bg-white focus:outline-none focus:border-amber-700 focus:border-2 transition-colors duration-200"
+									className="w-full bg-gray-50 px-4 py-3 border border-gray-200 rounded-xl focus:bg-white focus:outline-none focus:border-cyan-600 focus:border-2 transition-colors duration-200"
 									placeholder="john@example.com"
 								/>
 							</div>
@@ -228,7 +228,7 @@ const Contact = () => {
 								value={formData.title}
 								onChange={handleInputChange}
 								required
-								className="w-full bg-gray-50 px-4 py-3 border border-gray-200 rounded-xl focus:bg-white focus:outline-none focus:border-amber-700 focus:border-2 transition-colors duration-200"
+								className="w-full bg-gray-50 px-4 py-3 border border-gray-200 rounded-xl focus:bg-white focus:outline-none focus:border-cyan-600 focus:border-2 transition-colors duration-200"
 								placeholder="Project Title or Collaboration Idea"
 							/>
 						</div>
@@ -248,7 +248,7 @@ const Contact = () => {
 								onChange={handleInputChange}
 								required
 								rows={5}
-								className="w-full bg-gray-50 px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-amber-700 focus:border-2 focus:bg-white transition-colors duration-200 resize-none"
+								className="w-full bg-gray-50 px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-cyan-600 focus:border-2 focus:bg-white transition-colors duration-200 resize-none"
 								placeholder="Describe your project or how we can work together..."
 							/>
 						</div>

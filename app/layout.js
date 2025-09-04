@@ -23,7 +23,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en" className="scroll-smooth scrollbar-hide">
+		<html lang="en" className="scrollbar-hide">
 			<body
 				className={`${sc_pro.className} ${lora.className} antialiased leading-relaxed overflow-x-hidden`}
 			>

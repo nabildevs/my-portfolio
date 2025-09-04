@@ -50,7 +50,7 @@ const Navbar = () => {
 
 				<ul className="hidden md:flex items-center gap-5 lg:gap-8">
 					{navigation.map((item) => (
-						<li key={item.name} className="hover:text-amber-700">
+						<li key={item.name} className="hover:text-cyan-600">
 							<a href={item.href}>{item.name}</a>
 						</li>
 					))}
@@ -76,7 +76,7 @@ const Navbar = () => {
 					</div>
 
 					{navigation.map((item) => (
-						<li key={item.name} className="active:text-amber-700">
+						<li key={item.name} className="active:text-cyan-600">
 							<a onClick={closeMenu} href={item.href}>
 								{item.name}
 							</a>

@@ -33,7 +33,7 @@ const Footer = () => {
 								<a
 									key={index}
 									href={`#${link.toLowerCase()}`}
-									className="text-gray-600 hover:text-amber-700 text-sm transition-colors duration-300"
+									className="text-gray-600 hover:text-cyan-600 text-sm transition-colors duration-300"
 								>
 									{link}
 								</a>

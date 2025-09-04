@@ -35,7 +35,7 @@ const Hero = () => {
 					download
 					className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2"
 				>
-					My CV <ArrowDownToLine className="w-5 h-5" />
+					My Resume <ArrowDownToLine className="w-5 h-5" />
 				</a>
 			</div>
 		</motion.div>

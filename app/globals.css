@@ -5,6 +5,10 @@
 	--font-sc_pro: 'Source Code Pro', monospace;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .about-image {
 	background: url('/user_picture.jpg');
 	width: 100%;
@@ -37,6 +41,7 @@
 		transform: translateX(calc(-100% / 3));
 	}
 }
+
 .animate-slide-right {
 	animation: slide-right 25s linear infinite;
 	width: max-content;
