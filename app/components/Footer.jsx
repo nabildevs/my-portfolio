@@ -16,7 +16,13 @@ const Footer = () => {
 			<div className="px-[12%] py-8">
 				<div className="max-w-6xl mx-auto">
 					<div className="flex flex-col items-center text-center space-y-5">
-						<Image src={assets.logo} alt="Logo" className="w-42" />
+						<Image
+							src="/images/logo.png"
+							alt="Logo"
+							width={112}
+							height={40}
+							className="w-42"
+						/>
 
 						<p className="text-gray-600 text-sm italic">
 							Turn ideas into reality, one line of code at a time.

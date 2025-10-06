@@ -20,7 +20,9 @@ const About = () => {
 			<div className="flex flex-col w-full lg:flex-row items-center gap-20 my-20 max-w-6xl mx-auto">
 				<div className="w-64 sm:w-80 max-w-none">
 					<Image
-						src={assets.user_photo}
+						src="/images/user-photo.jpg"
+						width={512}
+						height={512}
 						alt="User Image"
 						className="about-image shadow-inset-white-frame"
 					/>
