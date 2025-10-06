@@ -17,7 +17,7 @@ const Footer = () => {
 				<div className="max-w-6xl mx-auto">
 					<div className="flex flex-col items-center text-center space-y-5">
 						<Image
-							src="/images/logo.png"
+							src="/logo.png"
 							alt="Logo"
 							width={112}
 							height={40}
